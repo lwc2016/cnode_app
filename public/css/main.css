@@ -1,0 +1,63 @@
+/*------公共样式------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 14px;
+	background-color: #e1e1e1;
+}
+a{
+	text-decoration: none;
+}
+
+
+.header{
+	min-width: 960px;
+	height: 50px;
+	background-color: #444444;
+}
+.header .brand{
+	float: left;
+	margin-left: 10px;
+}
+.header .brand a{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+	color: #ffffff;
+}
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.nav{
+	float: right;
+	list-style: none;
+}
+.nav .nav_item{
+	display: inline-block;
+}
+.nav .nav_item a{
+	color: #999999;
+	line-height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.nav .nav_item a:hover{
+	color: #cccccc;
+}
+
+.content{
+	margin: 20px auto;
+	background-color: #ffffff;
+}
+
+.footer{
+	min-width: 960px;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	background-color: #ffffff;
+}

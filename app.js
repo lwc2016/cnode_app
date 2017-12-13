@@ -48,12 +48,10 @@ require("./config/routes.config.js")(app);
 
 /*----------捕获404错误-------------*/
 app.use(function(req, res, next) {
-	/*
 	let err = new Error("Error: 404, the source is not found!");
 	err.status = 404;
 	next(err);
-	*/
-	return res.render("404.njk");
+	//return res.render("404.njk");
 });
 
 /*----------捕获500错误-------------*/

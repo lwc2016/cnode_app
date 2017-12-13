@@ -6,7 +6,7 @@ exports.getTopics = (req, res, next) => {
 	let page = req.query.page || 1;
 	let limit = 20;
 	let mdrender = true;
-	let tab = req.query.tab || "good";
+	let tab = req.query.tab || "all";
 	let params = {
 		page,
 		limit,

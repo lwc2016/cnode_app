@@ -1,0 +1,70 @@
+#tag{
+	background-color: #f6f6f6;
+	padding: 10px;
+}
+#tag .tag_item{
+	margin: auto 10px;
+	color: #80bd01;
+	padding: 0 3px;
+}
+#tag .tag_item:hover{
+	color: #08c;
+}
+#tag .tag_item_active{
+	background-color: #80bd01;
+	color: #ffffff;
+	border-radius: 3px;
+}
+
+#list{
+
+}
+#list .list_item{
+	padding: 10px;
+	border-bottom: 1px solid #f0f0f0;
+}
+#list .list_item:hover{
+	background-color: #f0f0f0;
+}
+#list .list_item .author_logo{
+	width: 30px;
+	height: 30px;
+	border-radius: 3px;
+	vertical-align: middle;
+}
+#list .list_item .count_num{
+	display: inline-block;
+	width: 70px;
+}
+#list .list_item .count_num i{
+	font-style: normal;
+}
+#list .list_item .count_num .reply_count{
+	color: #9e78c0;
+}
+#list .list_item .count_num .divide{
+	font-size: 10px;
+}
+#list .list_item .count_num .visit_count{
+	font-size: 10px;
+	color: #b4b4b4;
+}
+#list .list_item .tag{
+	background-color:#e5e5e5;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #999999;
+	border-radius: 3px;
+}
+#list .list_item .title{
+	color: #333333;
+}
+#list .list_item .title:visited{
+	color: #888888;
+}
+#list .list_item .title:hover{
+	text-decoration: underline;
+}
+#list .list_item .time{
+	float: right;
+}

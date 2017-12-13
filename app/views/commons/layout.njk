@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="/css/main.css">
+	{% block css %}
+	{% endblock %}
+</head>
+<body>
+	{% include "./header.njk" %}
+	<div class="wrapper content">
+		{% block content %}
+		{% endblock %}
+	</div>
+	{% include "./footer.njk" %}
+</body>
+</html>

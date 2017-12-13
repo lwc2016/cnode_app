@@ -1,0 +1,32 @@
+{% extends "../commons/layout.njk" %}
+{% block css %}
+	<link rel="stylesheet" href="/css/index.css">
+{% endblock %}
+{% block content %}
+	<div>
+		<div id="tag">
+			<a class="tag_item tag_item_active" href="">全部</a>
+			<a class="tag_item" href="">精华</a>
+			<a class="tag_item" href="">分享</a>
+			<a class="tag_item" href="">问答</a>
+			<a class="tag_item" href="">招聘</a>
+			<a class="tag_item" href="">客户端测试</a>
+		</div>
+	</div>
+	<div id="list">
+		{% for item in list %}
+			<div class="list_item">
+				<img class="author_logo" src="{{item.author.avatar_url}}" alt="">
+				<span class="count_num">
+					<i class="reply_count">{{item.reply_count}}</i><i class="divide">/</i><i class="visit_count">{{item.visit_count}}</i>
+				</span>
+				<span class="tag">{{item.tab | cnode_tag}}</span>
+				<a href="{{'/topic/' + item.id}}" class="title">{{item.title}}</a>
+				<span class="time">{{item.last_reply_at}}</span>
+			</div>
+		{% endfor %}
+	</div>
+	<script>
+		console.log({{list | dump | safe}})
+	</script>	
+{% endblock %}
