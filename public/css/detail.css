@@ -1,0 +1,87 @@
+#artical_title{
+	padding: 10px;
+	background-color: #ffffff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#artical_title .title{
+	font-size: 22px;
+}
+#artical_title .other_info{
+	margin-top: 10px;
+	font-size: 12px;
+	color: #838383;
+}
+#artical_title .other_info i{
+	font-size: 18px;
+	font-style: normal;
+	vertical-align: middle;
+}
+#artical_title .other_info span{
+	vertical-align: middle;
+}
+
+#content{
+	border-top: 1px solid #e5e5e5;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+}
+#content h1{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-size: 32.5px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#content h2{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-size: 26px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#content h3{
+	font-size: 24.5px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#content img{
+	width: 100%;
+}
+#content ul{
+	margin: 0 0 10px 25px;
+}
+#content p{
+	font-size: 15px;
+	line-height: 1.7em;
+	margin:1em 0;
+} 
+#content table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#content table th,td{
+	border: 1px solid #cccccc;
+	padding: 6px 13px;
+}
+
+#content table tr:nth-child(2n){
+	background-color: #f8f8f8;
+}
+
+#content ul li{
+	line-height: 2em;
+}
+
+#content .prettyprint{
+	background-color: #111111;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+#content .prettyprint code{
+	white-space: pre-wrap;
+	color: #ffffff;
+}
+

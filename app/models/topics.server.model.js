@@ -17,6 +17,7 @@ exports.getTopics = (req, res, next) => {
 		params
 	}).then((response) => {
 		if (response.data.success) {
+			console.log(response);
 			req.response = response.data.data;
 			next();
 		} else {

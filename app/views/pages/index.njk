@@ -5,12 +5,12 @@
 {% block content %}
 	<div>
 		<div id="tag">
-			<a class="tag_item tag_item_active" href="">全部</a>
-			<a class="tag_item" href="">精华</a>
-			<a class="tag_item" href="">分享</a>
-			<a class="tag_item" href="">问答</a>
-			<a class="tag_item" href="">招聘</a>
-			<a class="tag_item" href="">客户端测试</a>
+			<a href="/" class="tag_item {{tag | tag_active('all')}}">全部</a>
+			<a href="/?tab=good" class="tag_item {{tag | tag_active('good')}}">精华</a>
+			<a href="/?tab=share" class="tag_item {{tag | tag_active('share')}}">分享</a>
+			<a href="/?tab=ask" class="tag_item {{tag | tag_active('ask')}}">问答</a>
+			<a href="/?tab=job" class="tag_item {{tag | tag_active('job')}}">招聘</a>
+			<a href="/?tab=dev" class="tag_item {{tag | tag_active('dev')}}">客户端测试</a>
 		</div>
 	</div>
 	<div id="list">
@@ -22,7 +22,7 @@
 				</span>
 				<span class="tag">{{item.tab | cnode_tag}}</span>
 				<a href="{{'/topic/' + item.id}}" class="title">{{item.title}}</a>
-				<span class="time">{{item.last_reply_at}}</span>
+				<span class="time">{{item.last_reply_at | distance_time}}</span>
 			</div>
 		{% endfor %}
 	</div>

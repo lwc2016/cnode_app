@@ -1,0 +1,23 @@
+{% extends "../commons/layout.njk" %}
+{% block css %}
+	<link rel="stylesheet" href="/css/detail.css">
+{% endblock %}
+{% block content %}
+	<div id="artical_title">
+		<p class="title">
+			<span>{{data.title}}</span>
+		</p>
+		<div class="other_info">
+			<span><i>&middot;</i>发布于 {{data.create_at | distance_time}}</span>
+			<span><i>&middot;</i>作者 {{data.author.loginname}}</span>
+			<span><i>&middot;</i>{{data.visit_count}} 人浏览</span>
+			<span><i>&middot;</i>来自 {{data.tab | cnode_tag}}</span>
+		</div>
+	</div>
+	<div id="content">
+		{{ data.content | safe }}
+	</div>
+	<script>
+		console.log({{data | dump | safe}});
+	</script>
+{% endblock %}
