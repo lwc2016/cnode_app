@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const session = require("express-session");
-const MongoStore = require("connect-mongo")(session);
 const env = require("./config/env.config.js");
 
 /*---------实例化express--------*/
@@ -37,10 +36,7 @@ app.use(session({
 	saveUninitialized: true,
 	cookie: {
 		maxAge: 10 * 60 * 60 * 1000
-	},
-	store: new MongoStore({
-		"url": env.mongodb
-	})
+	}
 }));
 
 /*-------配置路由-------*/

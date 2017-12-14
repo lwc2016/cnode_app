@@ -85,3 +85,62 @@
 	color: #ffffff;
 }
 
+#replies{
+	margin: 15px auto;
+}
+
+#replies .replies_title{
+	background-color: #f6f6f6;
+	padding: 10px;
+}
+#replies .replies_list{
+	background-color: #ffffff;
+}
+#replies .item{
+	padding: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#replies .item .user_logo{
+	width: 30px;
+	height: 30px;
+	border-radius: 3px;
+	vertical-align: middle;
+}
+#replies .item .item_zan{
+	display: inline-block;
+	float:right;
+	font-size: 15px;
+	color: #999999;
+}
+#replies .item .user_name{
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#replies .item .user_info{
+	display: inline-block;
+	vertical-align: middle;
+}
+#replies .item .reply_time{
+	font-size: 11px;
+	color: #08c;
+}
+#replies .item .reply_time:hover{
+	text-decoration: underline;
+}
+#replies .item .markdown-text p{
+	font-size: 15px;
+	line-height: 1.7em;
+	margin-bottom: 1em;
+}
+#replies .item .item_repliy_content{
+	margin-top: 5px;
+}
+#replies .item .markdown-text a{
+	color: #08c;
+}
+#replies .item .markdown-text a:hover{
+	text-decoration: underline;
+}

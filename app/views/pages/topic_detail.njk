@@ -17,7 +17,35 @@
 	<div id="content">
 		{{ data.content | safe }}
 	</div>
+	<div id="replies">
+		<div class="replies_title">
+			{{data.replies.length}}回复
+		</div>
+		<div class="replies_list">
+			{% for item in data.replies %}
+				<div class="item">
+					<div class="item_title">
+						<a href="">
+							<img class="user_logo" src="{{item.author.avatar_url}}" alt="">
+						</a>
+						<div class="user_info">
+							<a href="" class="user_name">{{item.author.loginname}}</a>
+							<a class="reply_time" href="">{{loop.index}}楼 &middot; {{item.create_at | distance_time}}</a>
+						</div>
+						
+						<div class="item_zan">
+							<span>{{item.ups.length}}</span>
+						</div>
+					</div>
+					<div class="item_repliy_content">
+						{{item.content | safe}}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 	<script>
 		console.log({{data | dump | safe}});
+		console.log({{data.replies | dump | safe}});
 	</script>
 {% endblock %}
